@@ -233,12 +233,12 @@
 
         window.addEventListener('resize', buildMatrixBackground);
 
-        function triggerYes() {
+        function triggerNo() {
             document.getElementById('viewInterface').style.display = 'none';
             document.getElementById('smileContainer').style.display = 'block';
         }
 
-        function triggerNo() {
+        function triggerYes() {
             const frame = document.getElementById('popupWindow');
             frame.style.transform = 'translate(4px, 4px)';
             setTimeout(() => frame.style.transform = 'translate(-4px, -4px)', 40);
